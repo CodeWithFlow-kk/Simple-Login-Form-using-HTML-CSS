@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form autocomplete="off">
+        <p class="intro">Login to your account</p>
+        <div class="field">
+            <div class="input-wrapper">
+                <input id="fullname" type="text" required placeholder=" "/>
+                <label for="fullname">Fullname</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="input-wrapper">
+                <input id="email" type="email" required placeholder=" " />
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="field">
+            <div class="input-wrapper">
+                <input id="password" type="password" required placeholder=" " />
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <p class="signup">Don't have an account? <span>Register</span></p>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

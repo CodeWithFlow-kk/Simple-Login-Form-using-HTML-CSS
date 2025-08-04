@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4285f4;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+form {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+}
+.intro {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.field {
+  margin: 25px 0;
+  position: relative;
+}
+.input-wrapper {
+  position: relative;
+}
+input {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  border: 1px solid #000;
+  outline: none;
+  padding: 14px 10px 6px; 
+  font-size: 1.05rem;
+  background: transparent;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+input:focus {
+  outline: none;
+  border-color: #5402f7;
+  box-shadow: 0 0 0 3px rgba(84, 2, 247, 0.25);
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  transform-origin: left top;
+  background: whitesmoke;
+  padding: 0 6px;
+  transition: 0.2s ease;
+  pointer-events: none;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: -1px;
+  font-size: 0.65rem;
+  color: #5402f7;
+}
+
+button {
+  background-color: #5402f7;
+  color: white;
+  outline: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.signup {
+  text-align: center;
+  margin: 12px 0 6px;
+  font-size: 0.9rem;
+}
+.signup span {
+  color: blue;
+  cursor: pointer;
+}
